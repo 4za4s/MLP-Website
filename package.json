@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
