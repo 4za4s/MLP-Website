@@ -1,3 +1,7 @@
+# Simple website for the bussiness Modern Light and Power
+A basic site for customers to visit and see what electrical services MLP provides.
+Built with Astro
+
 # Astro Starter Kit: Basics
 
 ```sh
