@@ -1,13 +1,84 @@
 ---
-
+import logo from "../assets/MLP logo.svg";
 ---
 
 <section id="about">
-  <h1>ABOUT</h1>
+  <img src={logo.src} />
+  <div class="text">
+    <p class="heading">About</p>
+    <p class="inner">
+      Excepteur efficient emerging, minim veniam anim aute carefully curated
+      Ginza conversation exquisite perfect nostrud nisi intricate Content. Qui
+      international first-class nulla ut. Punctual adipisicing, essential lovely
+      queen tempor eiusmod irure. Exclusive izakaya charming Scandinavian
+      impeccable aute quality of life soft power pariatur Melbourne occaecat
+      discerning. Qui wardrobe aliquip, et Porter destination Toto remarkable
+      officia Helsinki excepteur Basset hound. Zürich sleepy perfect
+      consectetur.
+    </p>
+  </div>
 </section>
 
 <style>
   #about {
-    border: 5px solid black;
+    background: #0a3351;
+    padding: var(--var-sds-size-space-1600, 4rem);
+    display: flex;
+    flex-direction: row;
+    gap: var(--var-sds-size-space-1200, 3rem);
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    max-width: 30rem;
+    width: 40%;
+    position: relative;
+  }
+
+  @media only screen and (max-width: 750px) {
+    #about {
+      flex-wrap: wrap;
+    }
+    .text {
+      width: 100%;
+    }
+  }
+
+  .heading {
+    color: var(--var-sds-color-text-default-default, #ffffff);
+    text-align: left;
+    font-family: var(
+      --var-sds-typography-subtitle-font-family,
+      "Inter-Regular",
+      sans-serif
+    );
+    font-size: 3rem;
+    line-height: 120%;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+    margin: 0%;
+  }
+
+  .inner {
+    color: var(--var-sds-color-text-default-default, #ffffff);
+    text-align: left;
+    font-family: var(--body-base-font-family, "Inter-Regular", sans-serif);
+    font-size: var(--body-base-font-size, 1rem);
+    line-height: var(--body-base-line-height, 140%);
+    font-weight: var(--body-base-font-weight, 400);
+    position: relative;
+    text-wrap: wrap;
+  }
+
+  img {
+    width: 23.875rem;
+    height: 21.875rem;
   }
 </style>
