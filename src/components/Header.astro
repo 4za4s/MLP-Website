@@ -1,10 +1,10 @@
 ---
-
+import logo from "../assets/small logo.svg";
 ---
 
 <section id="header">
   <div class="block">
-    <img class="mlp-logo" src="logosmall.svg" />
+    <img class="mlp-logo" src={logo.src} />
   </div>
   <nav class="nav-links">
     <a href="#about">About</a>
@@ -20,7 +20,7 @@
     border-style: solid;
     border-color: #444444;
     border-width: 0rem 0rem 0.1rem 0rem;
-    padding: 2rem;
+    padding: 0.3rem 2rem 0.3rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,6 +29,7 @@
   }
 
   .mlp-logo {
+    height: 5.2rem;
   }
 
   .nav-links {

@@ -13,14 +13,19 @@
   @import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
 
   #title {
-    background: conic-gradient(
+    background-image: url("../assets/main.jpg");
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    /* background: conic-gradient(
       rgba(0, 0, 0, 0.815) 90deg,
       rgba(0, 0, 0, 0.8) 90deg 180deg,
       rgba(0, 0, 0, 0.815) 180deg 270deg,
       rgba(0, 0, 0, 0.8) 270deg
     );
     background-repeat: repeat;
-    background-size: 120px 120px;
+    background-size: 120px 120px; */
     padding: var(--var-sds-size-space-4000, 15rem)
       var(--var-sds-size-space-600, 1.5rem)
       var(--var-sds-size-space-4000, 15rem)
@@ -43,6 +48,7 @@
     font-size: var(--var-sds-typography-title-hero-size, 4.5rem);
     letter-spacing: -0.03em;
     margin-bottom: 0;
+    text-shadow: 2px 2px 2px black;
   }
 
   .subtitle {
@@ -52,5 +58,6 @@
     font-weight: 400;
     font-size: var(--var-sds-typography-subtitle-size-base, 2rem);
     margin-top: 0;
+    text-shadow: 2px 2px 2px black;
   }
 </style>
