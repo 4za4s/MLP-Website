@@ -25,6 +25,7 @@ import logo from "../assets/small logo.svg";
     align-items: center;
     justify-content: space-between;
   }
+
   .block {
   }
 
@@ -50,5 +51,13 @@ import logo from "../assets/small logo.svg";
     display: flex;
     align-items: center;
     justify-content: flex-start;
+  }
+
+  @media only screen and (max-width: 454px) {
+    #header {
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 1rem;
+    }
   }
 </style>
